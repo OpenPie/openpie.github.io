@@ -1,0 +1,406 @@
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}h2{font-size:1.5em;margin:0.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:0.83em;margin:1.67em 0}h6{font-size:0.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace, serif;_font-family:'courier new', monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, FreeSans, sans-serif;
+}
+
+body {
+	background-color: #fff;
+	font-size: 1em;
+	line-height: 1.4;
+	-webkit-font-feature-settings: "liga", "dlig";
+	-moz-font-feature-settings: "liga", "dlig";
+	-ms-font-feature-settings: "liga", "dlig";
+	-o-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+	text-rendering: optimizeLegibility;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1,
+h2,
+nav {
+	color: #00a2db;
+	font-weight: normal;
+	font-family: Lato, "Trebuchet MS", "DejaVu Sans", sans-serif;
+}
+
+header h1 {
+	float: left;
+	font-size: 300%;
+	margin-bottom: 0.8em;
+}
+
+header h1:before {
+	content: "<";
+}
+
+header h1:after {
+	content: ">";
+}
+
+header h1:before,
+header h1:after,
+header h1 span {
+	color: #86bed9;
+}
+
+nav {
+	float: right;
+	position: relative;
+	top: 2.8em;
+}
+
+nav li {
+	float: left;
+	font-size: 87.5%;
+	margin-left: 2.2em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+nav a,
+nav a:visited {
+	color: #002738;
+	padding: 0.4em 1.2em;
+	text-decoration: none;
+}
+
+nav a:hover,
+.nav-selected {
+	background-color: #e8f3d4; 
+}
+
+
+
+/* about */
+
+.video-placeholder {
+	background-color: #ccc;
+	color: #999;
+	font-size: 325%;
+	height: 298px;
+	line-height: 298px;
+	margin: 0 auto -25px;
+	position: relative;
+	width: 530px;
+	text-align: center;
+}
+
+.intro h1 {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.intro h1 span {
+	color: #006996;
+}
+
+.examples {
+	padding: 3em 0;
+}
+
+
+
+/* get started */
+
+.get-started {
+	padding: 2em 0;
+}
+
+.get-started aside {
+	background-color: #e8f3d4;
+	float: left;
+	font-family: Lato, "Trebuchet MS", "DejaVu Sans", sans-serif;
+	margin-right: 6.5%;
+	min-height: 12em;
+	width: 23.375%;
+}
+
+.get-started aside ul {
+	list-style:none;
+	list-style-image:none;
+	padding: 0 1em;
+}
+
+.get-started aside a {
+	color: #00a2db;
+	text-decoration: none;
+}
+
+.get-started aside a:hover {
+	border-bottom: 1px dotted #00a2db;
+}
+
+.get-started section {
+	float: right;
+	width: 70.125%;
+}
+
+.get-started section h2 {
+	margin-top: 0;
+}
+
+
+
+/* get involved */
+
+.get-involved {
+	padding: 2em 0;
+	text-align: center;
+}
+
+.get-involved div {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+}
+
+.get-group {
+	background-image: url(../img/group.png);
+}
+
+.get-blog {
+	background-image: url(../img/blog.png);
+}
+
+.get-twitter {
+	background-image: url(../img/twitter.png);
+}
+
+
+
+/* footer */
+
+footer {
+	margin-top: 2em;
+}
+
+footer .container {
+	font-family: Georgia, "DejaVu Serif", serif;
+	position: relative;
+}
+
+footer:after {
+	background-color: #e8f3d4;
+	content: "";
+	height: 3em;
+	position: absolute;
+	width: 100%;
+}
+
+.quote {
+	background-repeat: no-repeat;
+	float: left;
+	font-size: 125%;
+	font-style: italic;
+	height: 240px;
+	margin: 0;
+	padding-left: 200px;
+	width: 12em;
+}
+
+.quote q {
+	display: inline-block;
+	margin-top: 1.4em;
+}
+
+.housewife {
+	background-image: url(../img/housewife.jpg);
+}
+
+.license {
+	bottom: 0;
+	float: right;
+	position: absolute;
+	right: 0;
+}
+
+.github {
+	background-image: url(../img/github.png);
+	display: inline-block;
+	height: 31px;
+	margin-left: 1em;
+	width: 80px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.container { margin: 0 auto; width: 780px; }
+.fullblock { background-color: #e8f3d4; }
+.halfblock { float: left; padding: 1.5em 0; width: 46.75%; }
+.thirdblock { float: left; padding: 1.5em 0; width: 29%; }
+.halfblock, .thirdblock { margin-right: 6.5%; }
+.halfblock:last-child, .thirdblock:last-child { margin-right: 0; }
+.button { background-color: #fdaf0a; border-radius: 6px; box-shadow: #111 0 2px 5px -2px, #fff 0 2px 5px 0 inset; color: #fff; display: inline-block; font-size: 150%; padding: 0.6em 2em; text-decoration: none; }
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+.ir:before { content: ""; display: block; width: 0; height: 100%; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
