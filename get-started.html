@@ -29,26 +29,58 @@
 
 <aside>
 <ul>
-<li><a href="#">Open convention</a></li>
-<li><a href="#">Usage</a></li>
-<li><a href="#">Libraries</a></li>
+<li><a href="#">Why use Pies</a></li>
+<li><a href="#">What is a Pie</a></li>
+<li><a href="#">OpenPie: Introduction</a></li>
+<li><a href="#">OpenPie: Recipes</a></li>
+<li><a href="#">OpenPie: Giving and receiving</a></li>
+<li><a href="#">OpenPie: Code example</a></li>
+<li><a href="#">Start baking pies!</a></li>
 </ul>
 </aside>
 
 
 <section>
 
-<h2>Open convention</h2>
-<p>The Semantic Web is a collaborative movement led by the international standards body, the World Wide Web Consortium (W3C). The standard promotes common data formats on the World Wide Web. By encouraging the inclusion of semantic content in web pages, the Semantic Web aims at converting the current web dominated by unstructured and semi-structured documents into a "web of data". The Semantic Web stack builds on the W3C's Resource Description Framework (RDF).</p>
-<p>According to the W3C, "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."</p>
+<h2>Why use Pies</h2>
+</p>Human communication flows naturally. You don’t need to ask your friend about his “ear’s OS” before delivering an information. When people talk, things are quite simple and fun.</p>
+<p>But the same is not true to humans’ devices. To see a full example, please refer to <a href="">“Why Joe, Amanda and Mike are my friends, but their devices are not”</a>.</p>
 
-<h2>Usage</h2>
-<p>The Semantic Web is a collaborative movement led by the international standards body, the World Wide Web Consortium (W3C). The standard promotes common data formats on the World Wide Web. By encouraging the inclusion of semantic content in web pages, the Semantic Web aims at converting the current web dominated by unstructured and semi-structured documents into a "web of data". The Semantic Web stack builds on the W3C's Resource Description Framework (RDF).</p>
-<p>According to the W3C, "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."</p>
+<h2>What is a Pie</h2>
+<p><em>Pie</em> is an acronym of <em>Piece of information</em>. Things we want to share daily are just pieces of info: parties invitations, places to go, recipes, reviews, quotes, business cards...</p>
+<p>Today, those digital pieces of info are so stuck and tied to systems environments that we are constantly forgetting how easy and fun would be simply sharing them in a human-friendly way.</p>
+<p>(Copying and pasting everything to e-mail isn't an effective solution, it’s a limited workaround)</p>
 
-<h2>Libraries</h2>
-<p>The Semantic Web is a collaborative movement led by the international standards body, the World Wide Web Consortium (W3C). The standard promotes common data formats on the World Wide Web. By encouraging the inclusion of semantic content in web pages, the Semantic Web aims at converting the current web dominated by unstructured and semi-structured documents into a "web of data". The Semantic Web stack builds on the W3C's Resource Description Framework (RDF).</p>
-<p>According to the W3C, "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries."</p>
+<h2>OpenPie: Introduction</h2>
+<p>OpenPie adds a layer of freedom and fun to devices.</p>
+<p>OpenPie is a simple combination of structured data and vocabulary, a convention about using existing technologies and concepts to make mobile applications talk to each other, regardless the systems constraints.</p>
+<p>It’s also an <em>open</em> initiative.</p>
+
+<h2>OpenPie: Recipes</h2>
+<p>The basic concept behind OpenPie is outputing and inputing <em>pies (pieces of information)</em> through <em>recipes</em>.</p>
+<p><em>Recipe = structured data (using schema.org vocabulary)</em></p>
+<p>To make sense, any input/output application must be talking the same language, or, in a better definition, the same <em>vocabulary</em>.</p>
+<p>The chosen vocabulary for OpenPie is <a href="http://schema.org">schema.org</a>. So, in addition, OpenPie is friendly to search engines and towards semantic web efforts.</p>
+
+<h2>OpenPie: Giving and receiving</h2>
+<p>JSON is the initial approach for transmitting pies because it is familiar to most programmers and completely language independent.</p>
+
+<h2>OpenPie: Code example</h2>
+<p>We want to create a pie for Joe’s party. This piece of info may contains:</p>
+<ul>
+	<li>Title: Joe’s Party</li>
+	<li>Description: Let’s rock and bake some pies!</li>
+	<li>Date: November/24/2012</li>
+	<li>Time: 14:50</li>
+</ul>
+<p>A party is an <em>event</em>.</p> 
+<p>Schema.org defines a set of possible properties to describe it. That schema is available at <a href="http://schema.org/Event">http://schema.org/Event</a></p>
+<p>The resulting pie is a JSON string containing all the information put into suitable properties:</p>
+<pre>{"itemtype":"http://schema.org/Event","name":"Joe's party","description":"Let's rock and bake some pies!","startDate":"2012-11-24T14:50"}</pre>
+<p>Note that <strong>itemtype</strong> refers to the chosen schema, so it is possible to the other side (the application that is receiving the JSON string) to understand what it is about and manage it the right way.</p>
+
+<h2>Start baking pies!</h2>
+<p></p>
 
 </section>
 
