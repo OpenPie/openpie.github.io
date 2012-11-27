@@ -174,14 +174,14 @@ nav a:hover,
 /* get started */
 
 .get-started {
-	padding: 2em 0;
+	padding-bottom: 2em;
 }
 
 .get-started aside {
 	background-color: #e8f3d4;
 	float: left;
 	font-family: Lato, "Trebuchet MS", "DejaVu Sans", sans-serif;
-	margin-right: 6.5%;
+	margin: 2em 6.5% 0 0;
 	min-height: 12em;
 	width: 23.375%;
 }
@@ -194,7 +194,7 @@ nav a:hover,
 
 .get-started aside li {
 	padding: 0 0 1em 0;
-	font-size: .9em;
+	font-size: 0.9em;
 }
 
 .get-started aside a {
@@ -209,17 +209,13 @@ nav a:hover,
 .get-started section {
 	float: right;
 	width: 70.125%;
-	font-size: .93em;
+	font-size: 93%;
 	line-height: 1.37em;
 	color: #444;
 }
 
 .get-started section h2 {
 	margin-top: 1.8em;
-}
-
-.get-started section p {
-
 }
 
 
@@ -229,6 +225,15 @@ nav a:hover,
 .get-involved {
 	padding: 2em 0;
 	text-align: center;
+}
+
+.get-involved a {
+	color: #333;
+	text-decoration: none;
+}
+
+.get-involved a:hover {
+	background-color: #e8f3d4;
 }
 
 .get-involved div {
@@ -328,91 +333,3 @@ footer:after {
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
