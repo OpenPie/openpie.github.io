@@ -150,7 +150,7 @@ nav a:hover,
 	font-size: 325%;
 	height: 298px;
 	line-height: 298px;
-	margin: 0 auto -25px;
+	margin: 0 auto;
 	position: relative;
 	width: 530px;
 	text-align: center;
@@ -163,10 +163,6 @@ nav a:hover,
 
 .intro h1 span {
 	color: #006996;
-}
-
-.examples {
-	padding: 3em 0;
 }
 
 
@@ -291,8 +287,8 @@ footer:after {
 	margin-top: 1.4em;
 }
 
-.housewife {
-	background-image: url(../img/housewife.jpg);
+.mammy {
+	background-image: url(../img/mammy.jpg);
 }
 
 .license {
@@ -308,6 +304,7 @@ footer:after {
 	height: 31px;
 	margin-left: 1em;
 	width: 80px;
+	margin-bottom: -.4em;
 }
 
 
