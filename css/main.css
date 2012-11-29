@@ -27,12 +27,6 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -43,30 +37,9 @@ body {
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
 img {
     vertical-align: middle;
 }
-
-/*
- * Remove default fieldset styles.
- */
 
 fieldset {
     border: 0;
@@ -74,12 +47,18 @@ fieldset {
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
     resize: vertical;
+}
+
+a {
+	border-bottom: 1px solid #00a2db;
+	color: #00a2db;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: none;
 }
 
 /* ==========================================================================
@@ -177,9 +156,13 @@ nav a:hover,
 	background-color: #e8f3d4;
 	float: left;
 	font-family: Lato, "Trebuchet MS", "DejaVu Sans", sans-serif;
-	margin: 2em 6.5% 0 0;
 	min-height: 12em;
-	width: 23.375%;
+	width: 182px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
 }
 
 .get-started aside ul {
@@ -194,8 +177,7 @@ nav a:hover,
 }
 
 .get-started aside a {
-	color: #00a2db;
-	text-decoration: none;
+	border-bottom: none;
 }
 
 .get-started aside a:hover {
