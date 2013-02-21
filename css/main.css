@@ -135,13 +135,19 @@ nav a:hover,
 	text-align: center;
 }
 
-.intro h1 {
+.video-description {
 	text-align: center;
-	margin-bottom: 1.5em;
+	font-size: .9em;
+	margin: 1em 0 4em 0;
 }
 
-.intro h1 span {
-	color: #006996;
+.intro h1 {
+	text-align: center;
+}
+
+.intro p {
+	text-align: center;
+	margin: 0 120px 2.2em 120px;
 }
 
 
