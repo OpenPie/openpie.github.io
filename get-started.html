@@ -10,25 +10,12 @@
 <!--[if lte IE 8]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
-<script>
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36648634-1']);
-  _gaq.push(['_setDomainName', 'bakeapie.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<!-- google analytics -->
 </head>
 <body>
 
 <header class="container clearfix">
-<h1>bake<span>a</span>pie</h1>
+<h1>OpenPie</h1>
 <nav>
 <ul>
 <li><a href="./">About</a></li>
@@ -42,10 +29,9 @@
 
 <aside>
 <ul>
-<li><a href="#why-use-pies">Why use OpenPie?</a></li>
+<li><a href="#why-use-openpie">Why use OpenPie?</a></li>
 <li><a href="#what-is-a-pie">What is a Pie</a></li>
 <li><a href="#introduction-to-openpie">Introduction to OpenPie</a></li>
-<li><a href="#recipes">Recipes</a></li>
 <li><a href="#giving-and-receiving">Giving and receiving</a></li>
 <li><a href="#code-example">Code example</a></li>
 <li><a href="#start-baking-pies">Start baking pies!</a></li>
@@ -55,29 +41,24 @@
 
 <section>
 
-<h2 id="why-use-pies">Why use OpenPie?</h2>
-<p>To transmit your application data between devices regardless the OS they are running or manufacturer constraints.</p>
+<h2 id="why-use-openpie">Why use OpenPie?</h2>
+<p>We believe that there are huge opportunities ahead by solving an annoying problem: devices such as smartphones are advanced pieces of hardware today, but people are <em>still getting frustrated</em> trying to share simple daily informations.</p>
 <p>Human communication flows naturally. You don’t need to ask your friend about his “ear’s OS” before delivering an information. When people talk, things are quite simple and fun.</p>
-<p>But the same is not true to humans’ devices. To see a full example, please refer to <a href="#">“Why Joe, Amanda and Mike are my friends, but their devices are not”</a>.</p>
+<p>But the same is not true to humans’ devices. To get a full example, please refer to <a href="#">“Why Joe, Amanda and Mike are my friends, but their devices are not”</a>.</p>
 
 <h2 id="what-is-a-pie">What is a Pie</h2>
 <p><em>Pie</em> is an acronym of <em>Piece of information</em>. Things we want to share daily are just pieces of info: parties invitations, places to go, recipes, reviews, quotes, business cards...</p>
-<p>Today, those digital pieces of info are so stuck and tied to systems environments that we are constantly forgetting how easy and fun would be simply sharing them in a human-friendly way.</p>
-<p>(Copying and pasting everything to e-mail isn't an effective solution, it’s a limited workaround)</p>
 
 <h2 id="introduction-to-openpie">Introduction to OpenPie</h2>
 <p>OpenPie adds a layer of freedom and fun to devices.</p>
-<p>OpenPie is a simple combination of structured data (JSON) and vocabulary (Schema.org) to make applications talk to each other, regardless the systems constraints.</p>
+<p>OpenPie is a simple combination of structured data (JSON) and vocabulary (Schema.org) to make applications talk to each other, regardless: the operating systems involved, device limitations (eg. is there a camera to read visual code or shoud use NFC?) and the applications themselves being the same or not.</p>
+<p>It is suitable to preserve the data during data-interchange procedure and, because it uses a vocabulary to describe the information, to give a context to the transmitted data.</p>
 <p>It’s also <em>open</em>.</p>
-
-<h2 id="recipes">Recipes</h2>
-<p>The basic concept behind OpenPie is outputing and inputing <em>pies (pieces of information)</em> through <em>recipes</em>.</p>
-<p><em>Recipe = structured data (JSON) + vocabulary (Schema.org)</em></p>
-<p>To make sense, any input/output application must be talking the same language, or, in a better definition, the same <em>vocabulary</em>.</p>
-<p>The chosen vocabulary for OpenPie is <a href="http://schema.org">Schema.org</a>. So, in addition, OpenPie is friendly to search engines and towards semantic web efforts.</p>
 
 <h2 id="giving-and-receiving">Giving and receiving pies</h2>
 <p>JSON is the initial approach for transmitting pies because it is familiar to most programmers and completely language independent.</p>
+<p>To make sense, the applications involved must be talking the same language, or, in a better definition, the same <em>vocabulary</em>.</p>
+<p>The chosen vocabulary is <a href="http://schema.org">Schema.org</a>. It is public, easy to understand, friendly to search engines and towards semantic web efforts.</p>
 
 <h2 id="code-example">Code example</h2>
 <p>We want to create a pie for Joe’s party. This piece of info may contains:</p>
@@ -91,7 +72,8 @@
 <p>Schema.org defines a set of possible properties to describe it. That schema is available at <a href="http://schema.org/Event">http://schema.org/Event</a></p>
 <p>The resulting pie is a JSON string containing all the information put into suitable properties:</p>
 <pre>{"itemtype":"http://schema.org/Event","name":"Joe's party","description":"Let's rock and bake some pies!","startDate":"2012-11-24T14:50"}</pre>
-<p>Note that <strong>itemtype</strong> refers to the chosen schema, so it is possible to the other side (the application that is receiving the JSON string) to understand what it is about and manage it the right way.</p>
+<p>Just for fun, we can call this code the <em>pie recipe</em>.</p>
+<p>Note that <strong>itemtype</strong> refers to the chosen schema, so it is possible to the other side (the application that is receiving the JSON string) to understand what it is about and manage the data according to the context.</p>
 
 <h2 id="start-baking-pies">Start baking pies!</h2>
 <p>At this time a group of <em>hackers (bakers?)</em> is having fun putting pieces together and building the foundations of OpenPie. <a href="get-involved.html">Get involved!</a></p>
@@ -103,8 +85,8 @@
 <footer>
 <div class="container clearfix">
 <p class="quote mammy"><q>“Pies are made to be shared!”</q></p>
-<p class="license"><small>Bakeapie.org is released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></small>
-<a href="https://github.com/bakeapie/BakeapieOrg" class="github ir">GitHub</a></p>
+<p class="license"><small>openpie.org is released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></small>
+<a href="https://github.com/OpenPie" class="github ir">GitHub</a></p>
 </div>
 </footer>
 
