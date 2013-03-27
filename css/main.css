@@ -276,11 +276,14 @@ footer:after {
 	right: 0;
 }
 
+.license a {
+	margin-right: .7em;
+}
+
 .github {
 	background-image: url(../img/github.png);
 	display: inline-block;
 	height: 31px;
-	margin-left: 1em;
 	width: 80px;
 	margin-bottom: -.4em;
 }
