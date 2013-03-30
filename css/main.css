@@ -63,37 +63,37 @@ a:hover {
 
 h1,
 h2,
-nav {
+.header-page nav {
 	color: #00a2db;
 	font-weight: normal;
 	font-family: Lato, "Trebuchet MS", "DejaVu Sans", sans-serif;
 }
 
-.header-nav {
+.header-page {
 	padding-top: 2.7em;
 }
 
-.header-nav h1 {
+.header-page h1 {
 	float: left;
 	font-size: 2.5em;
 	margin: 0 0 .88em 0;
 }
 
-.header-nav h1 a,
-.header-nav h1 a:visited {
+.header-page h1 a,
+.header-page h1 a:visited {
 	color: inherit;
 	text-decoration: inherit;
 }
 
-nav {
+.header-page nav {
 	float: right;
 }
 
-nav ul {
+.header-page nav ul {
 	padding-left: 0;
 }
 
-nav li {
+.header-page nav li {
 	display: inline;
 	font-size: .875em;
 	margin-left: 2.2em;
@@ -101,18 +101,18 @@ nav li {
 	white-space: nowrap;
 }
 
-nav li:first-child {
+.header-page nav li:first-child {
 	margin-left: 0;
 }
 
-nav a,
-nav a:visited {
+.header-page nav a,
+.header-page nav a:visited {
 	color: #002738;
 	padding: 0.4em 1.2em;
 	text-decoration: none;
 }
 
-nav a:hover,
+.header-page nav a:hover,
 .nav-selected {
 	color: #002738;
 	background-color: #e8f3d4;
@@ -332,16 +332,16 @@ footer:after {
 }
 
 @media only screen and (max-width: 680px) {
-	.header-nav h1, .header-nav nav, .footer-quote { float: none; text-align: center; }
-	.header-nav nav { top: 0; }
+	.header-page h1, .header-page nav, .footer-quote { float: none; text-align: center; }
+	.header-page nav { top: 0; }
 	.footer-quote { background: none; height: auto; padding-left: 0; width: auto; }
 	.license { position: relative; text-align: center; }
 	.video-placeholder { width: 100%; }
 }
 
 @media only screen and (max-width: 460px) {
-	.header-nav { padding-top: 1em; }
-	.header-nav li { display: block; margin: 1em 0; }
+	.header-page { padding-top: 1em; }
+	.header-page nav li { display: block; margin: 1em 0; }
 	.intro h1 { font-size: 1.75em; }
 	.get-involved div { margin-bottom: 2em; }
 	.get-involved h2, .get-involved p { margin: 0; }
@@ -349,5 +349,5 @@ footer:after {
 }
 
 @media only screen and (max-height: 320px) {
-	.header-nav { padding-top: 1em; }
+	.header-page { padding-top: 1em; }
 }

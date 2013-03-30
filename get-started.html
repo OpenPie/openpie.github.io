@@ -20,7 +20,7 @@ ga('send', 'pageview');
 </head>
 <body>
 
-<header class="header-nav container clearfix">
+<header class="header-page container clearfix">
 <h1><a href="./">OpenPie</a></h1>
 <nav>
 <ul>
@@ -33,7 +33,7 @@ ga('send', 'pageview');
 
 <div class="get-started container clearfix">
 
-<nav class="toc">
+<nav class="toc" id="toc">
 <ul>
 <li><a href="#why-use-openpie">Why use OpenPie?</a></li>
 <li><a href="#what-is-a-pie">What is a Pie</a></li>
@@ -100,7 +100,7 @@ ga('send', 'pageview');
 </footer>
 
 <script>
-var sticky = document.querySelector('aside');
+var sticky = document.getElementById('toc');
 var origOffsetY = sticky.offsetTop;
 function onScroll(e) {
 	window.scrollY >= origOffsetY ? sticky.classList.add('sticky') : sticky.classList.remove('sticky');
