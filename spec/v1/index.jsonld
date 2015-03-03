@@ -1,0 +1,21 @@
+   {
+   "Person": {
+      "ancestors": [
+        "Thing"
+      ], 
+      "comment": "", 
+      "comment_plain": "", 
+      "id": "Person", 
+      "label": "Person", 
+      "properties": [
+        "bgimage",
+        "bgcolor", 
+        "txtcolor"
+      ], 
+      "subtypes": [], 
+      "supertypes": [
+        "Thing"
+      ], 
+      "url": "http://openpie.org/spec/v1/"
+    }
+	}
