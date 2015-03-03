@@ -1,12 +1,12 @@
    {
-   "Person": {
+   "Card": {
       "ancestors": [
         "Thing"
       ], 
       "comment": "", 
       "comment_plain": "", 
-      "id": "Person", 
-      "label": "Person", 
+      "id": "Card", 
+      "label": "Card", 
       "properties": [
         "bgimage",
         "bgcolor", 
