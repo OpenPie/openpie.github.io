@@ -1,0 +1,21 @@
+   {
+   "Card": {
+      "ancestors": [
+        "Thing"
+      ], 
+      "comment": "", 
+      "comment_plain": "", 
+      "id": "Card", 
+      "label": "Card", 
+      "properties": [
+        "bgimage",
+        "bgcolor", 
+        "txtcolor"
+      ], 
+      "subtypes": [], 
+      "supertypes": [
+        "Thing"
+      ], 
+      "url": "http://openpie.org/spec/v1/"
+    }
+	}
