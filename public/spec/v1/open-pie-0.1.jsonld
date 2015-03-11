@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "webprotege": "http://protege.stanford.edu/webprotege/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:N01fc2cc9911f428686288e8d034bbe59",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "http://webprotege.stanford.edu/RDzyKgdoRjis2yUax9X4hjx"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDi2wSQhKtdTkH81PvfAOse",
+      "@type": "owl:Class",
+      "rdfs:label": "Card",
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:N01fc2cc9911f428686288e8d034bbe59"
+        },
+        {
+          "@id": "_:N864ceda56fcd487291a65f3adb2e3244"
+        },
+        {
+          "@id": "_:N5dc26575100d4f69a58fc6c08cb46fab"
+        },
+        {
+          "@id": "owl:Thing"
+        }
+      ]
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/project/DHD3uVWPKSYygqnqXZfMxx",
+      "@type": "owl:Ontology",
+      "dc:creator": [
+        "Rafael Libardi",
+        "system"
+      ],
+      "dc:date": {
+        "@type": "xsd:dateTime",
+        "@value": "Mar 3, 2015 4:50:57 AM"
+      },
+      "rdfs:comment": [
+        "Specific ontology for OpenPie application",
+        "This ontology was generated from an ontology revision in WebProtege http://webprotege.stanford.edu"
+      ],
+      "webprotege:revision": 5
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDzyKgdoRjis2yUax9X4hjx",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "txtcolor"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RpuOuVrGIJnviq0TN1zuOH",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "bgcolor"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RHLKVB2C4O9nHN9zoVuLwc",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "bgimage"
+    },
+    {
+      "@id": "_:N864ceda56fcd487291a65f3adb2e3244",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "http://webprotege.stanford.edu/RpuOuVrGIJnviq0TN1zuOH"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "_:N5dc26575100d4f69a58fc6c08cb46fab",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "http://webprotege.stanford.edu/RHLKVB2C4O9nHN9zoVuLwc"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    }
+  ]
+}
